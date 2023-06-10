@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    border: 3px solid lightgrey;
+    padding: 20px;
+    margin: 20px;
+    
+
+}
+
+.items {
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.on-dragging {
+    border: 4px dashed black;
+}
+
+#btn {
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    height: 40px;
+    width: 80px;
+}
+
+#msg {
+    font-size: 30px;
+    color: rgb(37, 155, 195);
+    text-align: center;
+    margin: 50px;
+}
+
+/* Responsive Styles */
+
+/* for screen smaller than 768px */
+@media screen and (max-width: 768px) {
+    .container{
+        display: block;
+    }
+    
+    .box{
+        width: 40%;
+        margin: 20px auto;
+    }
+    .items{
+        width: 100%;
+    }
+
+    #btn{
+        margin-top: 50px;
+    }
+}
